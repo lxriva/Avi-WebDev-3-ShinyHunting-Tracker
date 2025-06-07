@@ -37,4 +37,4 @@ Track shiny progress across different games and methods, store hunt data locally
 
 To import shiny sprites into the `/assets` folder:
 
-1. Go to this site and find your Pokémon’s sprite:
+Go to this site and find your Pokémon’s sprite: https://www.shinyhunters.com/images/shiny/319.gif --> replace "319" with pokedex number of pokemon you're hunting
