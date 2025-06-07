@@ -41,8 +41,7 @@ Go to this site and find your Pokémon’s sprite: https://www.shinyhunters.com/
 
 ## 🧑‍💻 Credits ## 
 
-Built by Aviral Jain
-Inspired by the real shiny grind!
+Built by Aviral Jain, inspired by the real shiny hunting grind!
 
 Sprites from:
 
