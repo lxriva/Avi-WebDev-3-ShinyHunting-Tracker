@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Shiny Hunting Counter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Shiny Hunting Counter</h1>
+
+  <form id="add-hunt-form">
+    <input type="text" id="hunt-name" placeholder="Shiny Name" required>
+    <input type="text" id="image-path" placeholder="e.g. shiny_eevee.gif" required>
+    <input type="text" id="hunt-method" placeholder="Hunting Method (e.g. Outbreak)" required>
+    <select id="game-select" required></select>
+    <button type="submit">Add New Hunt</button>
+  </form>
+
+  <label for="hunt-selector">Select Hunt:</label>
+  <select id="hunt-selector"></select>
+
+  <section id="selected-hunt-view"></section>
+
+  <script src="script.js"></script>
+</body>
+</html>
