@@ -39,7 +39,8 @@ To import shiny sprites into the `/assets` folder:
 
 Go to this site and find your Pokémon’s sprite: https://www.shinyhunters.com/images/shiny/319.gif --> replace "319" with pokedex number of pokemon you're hunting
 
-🧑‍💻 Credits
+## 🧑‍💻 Credits ## 
+
 Built by Aviral Jain
 Inspired by the real shiny grind!
 
