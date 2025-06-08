@@ -1,37 +1,62 @@
+h1 {
+  font-size: 2.6rem;
+  margin-top: 0.3rem;
+  margin-bottom: 0.5rem;
+}
 
 body {
-  font-family: sans-serif;
-  padding: 2rem;
-  background: #f4f4f4;
+  background-image: url('assets/background.png');
+  background-size: 100rem;
 }
 
-form {
-  margin-bottom: 2rem;
-}
 
 .hunt {
-  background: white;
-  padding: 1rem;
+  background: url('https://img.pikbest.com/background/20220119/simple-white-geometric-lines-shading-texture-background_6219942.jpg!sw800');
+  background-size: 10rem;
+  padding: 0.8rem;
   margin-bottom: 1rem;
-  border-radius: 8px;
+  border-radius: 500px;
   display: flex;
   align-items: center;
   gap: 1rem;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   border-left: 10px solid transparent;
+  font-size: 1.2rem;
 }
 
 .hunt img {
-  width: 10rem;
-  height: 10rem;
+  width: 23rem;
+  height: 15rem;
   object-fit: contain;
   image-rendering: pixelated;
 }
 
+.hunt h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  margin-top: 0.9rem;
+}
+
+#hunt-selector {
+  font-size: 1.4rem;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  border: 2px solid #ccc;
+  width: 15rem;
+  margin-bottom: 1rem;
+}
+
 .counter-controls {
-  display: flex;
-  gap: 0.5rem;
+  display: 10rem;
+  gap: 2rem;
   margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.counter-controls button {
+  font-size: 1.2rem;
+  padding: 10px 50px;
 }
 
 /* Gen color coding */
@@ -44,6 +69,70 @@ form {
 .gen9 { border-left-color: #a8a878; }
 
 /* Completed hunts */
-.completed {
-  opacity: 0.5;
+.completed { 
+  background: rgb(11, 192, 11);
+}
+
+button {
+  width: 14rem;
+  font-size: 1rem;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+form input,
+form select {
+  font-size: 1.3rem;
+  padding: 0.6rem 0.6rem;
+  margin: 0.5rem 0;
+  width: 100%;
+  max-width: 10rem;
+  border-radius: 8px;
+  border: 2px solid #ccc;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+  
+}
+
+.import-export-buttons button {
+  width: 14rem;
+  height: 1rem;
+  font-size: 1.1rem;
+  padding: 6px 6px;
+  margin: 0.3rem;
+}
+
+.hunt-controls select,
+.hunt-controls button {
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  border: 2px solid #ccc;
+  min-width: 10rem;
+  margin-top: 0.3rem;
+}
+
+.hunt-controls .inline-label {
+  font-size: 1.2rem;
+  margin-right: 0.5rem;
+}
+
+@media (max-width: 500px) {
+  .hunt-controls {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hunt-controls select,
+  .hunt-controls button {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.save-button {
+  font-size: 1rem;
+  padding: 5px 14px;
+  width: 7rem;
+  margin-top: 0.3rem;
 }

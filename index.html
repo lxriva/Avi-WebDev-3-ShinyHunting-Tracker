@@ -3,11 +3,12 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Shiny Hunting Counter</title>
+  <title>✨ Pokémon Shiny Hunting Counter ✨</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <h1>Shiny Hunting Counter</h1>
+  <h1>✨ Pokémon Shiny Hunting Counter ✨</h1>
 
   <form id="add-hunt-form">
     <input type="text" id="hunt-name" placeholder="Shiny Name" required>
@@ -17,8 +18,15 @@
     <button type="submit">Add New Hunt</button>
   </form>
 
-  <label for="hunt-selector">Select Hunt:</label>
-  <select id="hunt-selector"></select>
+  <div class="hunt-controls">
+    <label for="hunt-selector" class="inline-label">Select Hunt:</label>
+    <select id="hunt-selector"></select>
+    <button onclick="exportHunts()">📤 Export</button>
+    <input type="file" id="importFile" style="display: none;">
+    <button onclick="document.getElementById('importFile').click()">📥 Import</button>
+  </div>
+  
+   
 
   <section id="selected-hunt-view"></section>
 

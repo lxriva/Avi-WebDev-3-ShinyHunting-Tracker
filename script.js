@@ -24,7 +24,6 @@ const gameGenerations = {
 const hunts = JSON.parse(localStorage.getItem("shinyHunts")) || [];
 let currentIndex = 0;
 
-// Upgrade old hunts
 hunts.forEach(h => {
   if (!("game" in h)) h.game = "Unknown";
   if (!("method" in h)) h.method = "Unknown";
@@ -74,13 +73,13 @@ function renderSelectedHunt() {
 
   container.innerHTML = `
     <img src="assets/${hunt.image}" alt="${hunt.name}" onerror="this.onerror=null;this.src='assets/fallback.gif';">
-    <div>
+    <div class="dynamic-content">
       <h2>${hunt.name}</h2>
       <label>
         <strong>Encounters:</strong>
         <input type="number" value="${hunt.count}" min="0" id="edit-count" style="width: 80px;">
       </label>
-      <button onclick="saveEditedCount()">Save</button>
+      <button class="save-button" onclick="saveEditedCount()">Save</button>
       <p><strong>Game:</strong> ${hunt.game}</p>
       <p><strong>Method:</strong> ${hunt.method}</p>
       <p>
@@ -177,18 +176,6 @@ document.addEventListener("keydown", (e) => {
     e.preventDefault();
     decrement();
   }
-});
-
-const buttonsDiv = document.createElement("div");
-buttonsDiv.style.marginTop = "1rem";
-buttonsDiv.innerHTML = `
-  <button onclick="exportHunts()">📤 Export Hunts</button>
-  <input type="file" id="importFile" style="display:none;">
-  <button onclick="document.getElementById('importFile').click()">📥 Import Hunts</button>
-`;
-document.body.insertBefore(buttonsDiv, document.getElementById("selected-hunt-view"));
-document.getElementById("importFile").addEventListener("change", (e) => {
-  importHunts(e.target.files[0]);
 });
 
 function exportHunts() {
