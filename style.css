@@ -59,6 +59,13 @@ body {
   padding: 10px 50px;
 }
 
+.save-button {
+  font-size: 1rem;
+  padding: 5px 14px;
+  width: 7rem;
+  margin-top: 0.3rem;
+}
+
 /* Gen color coding */
 .gen3 { border-left-color: #f08030; }
 .gen4 { border-left-color: #6890f0; }
@@ -128,11 +135,4 @@ form select {
     width: 100%;
     text-align: center;
   }
-}
-
-.save-button {
-  font-size: 1rem;
-  padding: 5px 14px;
-  width: 7rem;
-  margin-top: 0.3rem;
 }
