@@ -114,10 +114,13 @@ function increment() {
 }
 
 function decrement() {
-  hunts[currentIndex].count--;
-  saveHunts();
-  renderSelectedHunt();
- }
+  if (hunts[currentIndex].count > 0) {
+    hunts[currentIndex].count--;
+    saveHunts();
+    renderSelectedHunt();
+  }
+}
+
 function reset() {
   hunts[currentIndex].count = 0;
   saveHunts();
