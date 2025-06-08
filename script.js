@@ -37,6 +37,7 @@ function saveHunts() {
   localStorage.setItem("shinyHunts", JSON.stringify(hunts));
 }
 
+// Populate game select
 const gameSelect = document.getElementById("game-select");
 gameList.forEach(game => {
   const option = document.createElement("option");
@@ -67,9 +68,9 @@ function renderSelectedHunt() {
   }
 
   const hunt = hunts[currentIndex];
-  const container = document.createElement("div");
   const genClass = gameGenerations[hunt.game] || "";
   const doneClass = hunt.completed ? "completed" : "";
+  const container = document.createElement("div");
   container.className = `hunt ${genClass} ${doneClass}`;
 
   container.innerHTML = `
@@ -91,6 +92,7 @@ function renderSelectedHunt() {
       </p>
       <div class="counter-controls">
         <button onclick="increment()">+1</button>
+        <button onclick="decrement()">-1</button>
         <button onclick="reset()">Reset</button>
         <button onclick="deleteCurrent()">Delete</button>
       </div>
@@ -113,10 +115,13 @@ function increment() {
 }
 
 function decrement() {
-  hunts[currentIndex].count--;
-  saveHunts();
-  renderSelectedHunt();
- }
+  if (hunts[currentIndex].count > 0) {
+    hunts[currentIndex].count--;
+    saveHunts();
+    renderSelectedHunt();
+  }
+}
+
 function reset() {
   hunts[currentIndex].count = 0;
   saveHunts();
@@ -168,14 +173,11 @@ document.addEventListener("keydown", (e) => {
   if (e.code === "Space" && !isInput) {
     e.preventDefault();
     increment();
-  }
-  else if (e.code === "Backspace" && !isInput) {
+  } else if (e.code === "Backspace" && !isInput) {
     e.preventDefault();
     decrement();
   }
 });
-
-
 
 renderSelector();
 renderSelectedHunt();
