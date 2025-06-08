@@ -91,6 +91,7 @@ function renderSelectedHunt() {
       </p>
       <div class="counter-controls">
         <button onclick="increment()">+1</button>
+        <button onclick="decrement()">-1</button>
         <button onclick="reset()">Reset</button>
         <button onclick="deleteCurrent()">Delete</button>
       </div>
