@@ -179,9 +179,6 @@ document.addEventListener("keydown", (e) => {
   }
 });
 
-renderSelector();
-renderSelectedHunt();
-
 const buttonsDiv = document.createElement("div");
 buttonsDiv.style.marginTop = "1rem";
 buttonsDiv.innerHTML = `
@@ -228,3 +225,6 @@ function importHunts(file) {
   };
   reader.readAsText(file);
 }
+
+renderSelector();
+renderSelectedHunt();
