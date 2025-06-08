@@ -26,7 +26,7 @@ body {
 
 .hunt img {
   width: 23rem;
-  height: 15rem;
+  height: 14rem;
   object-fit: contain;
   image-rendering: pixelated;
 }
