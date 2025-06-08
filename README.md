@@ -39,6 +39,35 @@ To import shiny sprites into the `/assets` folder:
 
 Go to this site and find your Pokémon’s sprite: https://www.shinyhunters.com/images/shiny/319.gif --> replace "319" with pokedex number of pokemon you're hunting
 
+## 🔁 Exporting & Importing Hunts (Cross-Device Manual Sync)
+
+You can now save and load your shiny hunt data between devices!
+
+### 📤 Export Hunts
+
+1. Click the **📤 Export Hunts** button on the tracker page
+2. A file named `shiny-hunts.json` will download to your device
+3. Save it somewhere safe (e.g. iCloud, Google Drive, Downloads)
+
+### 📥 Import Hunts
+
+1. On another device (or after resetting your browser), open the tracker
+2. Click **📥 Import Hunts**
+3. Choose your previously saved `shiny-hunts.json` file
+4. Your hunts will be restored!
+
+✅ This works across phones, tablets, and PCs  
+✅ Keeps all your count, game, method, and completion status  
+❌ Note: this doesn't auto-sync — it's a manual backup/restore system
+
+---
+
+### 💾 Recommended Storage Tips
+
+- **Mobile users (iOS/Android):** save to Files app, Downloads, or Google Drive
+- **PC users:** any folder works — just remember where you saved it
+- Want to keep multiple backups? Rename the file like `shiny-hunts_2025-06-08.json`
+
 ## 🧑‍💻 Credits ## 
 
 Built by Aviral Jain, inspired by the real shiny hunting grind!

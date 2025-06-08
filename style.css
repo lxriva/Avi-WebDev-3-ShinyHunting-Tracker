@@ -46,5 +46,4 @@ form {
 /* Completed hunts */
 .completed {
   opacity: 0.5;
-  text-decoration: line-through;
 }
