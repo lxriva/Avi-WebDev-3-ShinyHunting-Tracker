@@ -50,7 +50,6 @@ body {
   font-size: 1rem;
   padding: 5px 14px;
   width: 5rem;
-  margin-top: 0.3rem;
 }
 
 /* Gen color coding */
@@ -68,7 +67,7 @@ body {
 }
 
 button {
-  width: 10rem;
+  width: 7rem;
   font-size: 1rem;
   padding: 10px;
   border-radius: 8px;
@@ -109,4 +108,19 @@ form select {
 .hunt-controls .inline-label {
   font-size: 1.2rem;
   margin-right: 0.5rem;
+}
+
+#edit-count {
+  font-size: 1.4rem;
+  padding: 5px 14px;
+  width: 7rem;
+  /* wider input box */
+  border-radius: 6px;
+}
+
+#complete-toggle {
+  transform: scale(1.5);
+  /* Increase checkbox size */
+  margin-right: 0.5rem;
+  cursor: pointer;
 }
