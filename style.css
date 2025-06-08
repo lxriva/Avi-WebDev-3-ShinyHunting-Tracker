@@ -6,7 +6,6 @@ h1 {
 
 body {
   background-image: url('assets/background.png');
-  background-size: 100rem;
 }
 
 
@@ -122,17 +121,4 @@ form select {
 .hunt-controls .inline-label {
   font-size: 1.2rem;
   margin-right: 0.5rem;
-}
-
-@media (max-width: 500px) {
-  .hunt-controls {
-    flex-direction: column;
-    align-items: stretch;
-  }
-
-  .hunt-controls select,
-  .hunt-controls button {
-    width: 200%;
-    text-align: center;
-  }
 }
