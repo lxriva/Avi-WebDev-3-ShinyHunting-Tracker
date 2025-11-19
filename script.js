@@ -7,7 +7,7 @@ const gameList = [
   "Sun", "Moon", "Ultra Sun", "Ultra Moon",
   "Let's Go Pikachu", "Let's Go Eevee",
   "Sword", "Shield", "Brilliant Diamond", "Shining Pearl",
-  "Legends Arceus", "Scarlet", "Violet"
+  "Legends Arceus", "Scarlet", "Violet", "Legends Z-A"
 ];
 
 const gameGenerations = {
